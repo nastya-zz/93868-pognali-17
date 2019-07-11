@@ -6,7 +6,76 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="" width="100" height="19" alt="логотип сервиса "Погнали"">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Попутчики</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Направления</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
+    <main class="page-main">
+      <h1 class="page-main__title">В путешествие с крутыми попутчиками!</h1>
+
+      <div class="hot-link">
+        <a class="hot-link__call-us icon icon--call-us" href="#">Свяжитесь с нами</a>
+        <a class="hot-link__write-us icon icon--write-us"  href="#">Напишите нам</a>
+        <a class="hot-link__login" href="#">Авторизоваться</a>
+      </div>
+
+      <section class="review">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+
+        <p class="review__text text-light">
+          «Лучшее приложение, что я видел в жизни!»
+        </p>
+        <p class="review__author text-bold">
+          Мурат Эльтазинглавный редактор газеты «гаджетлайф»
+        </p>
+      </section>
+      <section class="action-plan">
+        <h2 class="visually-hidden">План действий</h2>
+        <div class="action-plan__wrapper">
+          <ul class="action-plan__list">
+            <li class="action-plan__item action-plan__item--step1">
+              Выберите направление
+            </li>
+            <li class="action-plan__item action-plan__item--step2">
+              Изучите идеи путешественников
+            </li>
+            <li class="action-plan__item action-plan__item--step3">
+              Находите тех, кто похож на вас
+            </li>
+            <li class="action-plan__item action-plan__item--step4">
+              Путешествуйте вместе!
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="service-info">
+        <h2 class="service-info__title">О сервисе</h2>
+        <p class="service-info__text tex-light">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой!
+          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        </p>
+        <p class="service-info__text text-bold">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+        </p>
+      </section>
+    </main>
   </body>
 </html>
