@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+        <a class=" page-header__logo logo  logo__link" href="index.html">
+          <img class="page-header__logo-image logo__img" src="http://placehold.it/100x19" width="100" height="19" alt="логотип сервиса Погнали">
+        </a>
+      <nav class="main-nav menu">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <a class="menu__link-login auth-button" href="#">Авторизоваться</a>
+          <div class="contacts">
+            <a class="contacts__item contacts__item--phone" href="tel:+78005558628">
+              <span class="contacts__content">8 800 555-86-28</span>
+            </a>
+            <a class="contacts__item contacts__item--email" href="mailto:mail@htmlacademy.ru">
+              <span class="contacts__content">mail@htmlacademy.ru</span>
+            </a>
+          </div>
+          <div class="page-header__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="inner-page">
+      <h1 class="inner-page__title">Попутчики</h1>
+
+      <section class="companions-filter">
+        <h2 class="companions-filter__title">Подберите идеального попутчика</h2>
+        <!-- здесь будет фильтр-->
+      </section>
+
+      <section class="inner-companions">
+        <ul class="inner-companions__list">
+          <li class="inner-companions__item">
+            <div class="inner-companions__wrapper">
+              <img class="inner-companions__img" src="http://placehold.it/70x70" width="70" height="70" alt="аватар пользователя">
+              <h3 class="inner-companions__name">Таня Фирсова</h3>
+              <p class="inner-companions__subscribers">1,5 м</p>
+            </div>
+            <p class="inner-companions__tags">
+              #ЗОЖ #ПП #Фитнес #пляж
+              #авокадо #смузи
+            </p>
+            <p class="inner-companions__text">хочет посетить:</p>
+            <ul class="inner-companions__wish-list countries-list">
+              <li class="countries-list__item countries-list__item--Sri-Lanka">Шри ланка</li>
+              <li class="countries-list__item countries-list__item----Thailand">Тайланд</li>
+              <li class="countries-list__item countries-list__item----Seychelles">Сейшелы</li>
+            </ul>
+            <p class="inner-companions__text">транспорт:</p>
+            <div class="transport">
+              <span class="transport__icon transport__icon--plane transport__icon--active">Самолет</span>
+              <span class="transport__icon transport__icon--bus">Автобус</span>
+              <span class="transport__icon transport__icon--bicycle">На велосипеде</span>
+              <span class="transport__icon transport__icon--walk">Пешком</span>
+            </div>
+            <p class="inner-companions__text">левел:</p>
+            <p class="inner-companions__level">99</p>
+            <button class="inner-companions__invite-button" type="button">Позвать!</button>
+          </li>
+
+          <li class="inner-companions__item">
+            <div class="inner-companions__wrapper">
+              <img class="inner-companions__img" src="http://placehold.it/70x70" width="70" height="70" alt="аватар пользователя">
+              <h3 class="inner-companions__name">Петя Демин</h3>
+              <p class="inner-companions__subscribers">150</p>
+            </div>
+            <p class="inner-companions__tags">
+              #бургер #бар #футбол
+              #концерт #крафт
+            </p>
+            <p class="inner-companions__text">хочет посетить:</p>
+            <ul class="inner-companions__wish-list countries-list">
+              <li class="countries-list__item countries-list__item--Belgium">Бельгия</li>
+              <li class="countries-list__item countries-list__item--czech">Чехия</li>
+            </ul>
+            <p class="inner-companions__text">транспорт:</p>
+            <div class="transport">
+              <span class="transport__icon transport__icon--plane transport__icon--active">Самолет</span>
+              <span class="transport__icon transport__icon--bus transport__icon--active">Автобус</span>
+              <span class="transport__icon transport__icon--bicycle">На велосипеде</span>
+              <span class="transport__icon transport__icon--walk transport__icon--active">Пешком</span>
+            </div>
+            <p class="inner-companions__text">левел:</p>
+            <p class="inner-companions__level">80</p>
+            <button class="inner-companions__invite-button" type="button">Позвать!</button>
+          </li>
+
+          <li class="inner-companions__item">
+            <div class="inner-companions__wrapper">
+              <img class="inner-companions__img" src="http://placehold.it/70x70" width="70" height="70" alt="аватар пользователя">
+              <h3 class="inner-companions__name">Марк Смолов</h3>
+              <p class="inner-companions__subscribers">1700</p>
+            </div>
+            <p class="inner-companions__tags">
+              #рэп #тату #хайпбист #кроссовки #суприм
+            </p>
+            <p class="inner-companions__text">хочет посетить:</p>
+            <ul class="inner-companions__wish-list countries-list">
+              <li class="countries-list__item countries-list__item--USA">США</li>
+              <li class="countries-list__item countries-list__item--Australia">Австралия</li>
+              <li class="countries-list__item countries-list__item--Dominican">Доминикана</li>
+            </ul>
+            <p class="inner-companions__text">транспорт:</p>
+            <div class="transport">
+              <span class="transport__icon transport__icon--plane transport__icon--active">Самолет</span>
+              <span class="transport__icon transport__icon--bus">Автобус</span>
+              <span class="transport__icon transport__icon--bicycle transport__icon--active">На велосипеде</span>
+              <span class="transport__icon transport__icon--walk">Пешком</span>
+            </div>
+            <p class="inner-companions__text">левел:</p>
+            <p class="inner-companions__level">25</p>
+            <button class="inner-companions__invite-button" type="button">Позвать!</button>
+          </li>
+
+          <li class="inner-companions__item">
+            <div class="inner-companions__wrapper">
+              <img class="inner-companions__img" src="http://placehold.it/70x70" width="70" height="70" alt="аватар пользователя">
+              <h3 class="inner-companions__name">Лариса Роговая</h3>
+              <p class="inner-companions__subscribers">23</p>
+            </div>
+            <p class="inner-companions__tags">
+              #образование #карьера #учеба #линкедин
+            </p>
+            <p class="inner-companions__text">хочет посетить:</p>
+            <ul class="inner-companions__wish-list countries-list">
+              <li class="countries-list__item countries-list__item--UK">Великобритания</li>
+              <li class="countries-list__item countries-list__item--Germany">Германия</li>
+            </ul>
+            <p class="inner-companions__text">транспорт:</p>
+            <div class="transport">
+              <span class="transport__icon transport__icon--plane transport__icon--active">Самолет</span>
+              <span class="transport__icon transport__icon--bus transport__icon--active">Автобус</span>
+              <span class="transport__icon transport__icon--bicycle">На велосипеде</span>
+              <span class="transport__icon transport__icon--walk">Пешком</span>
+            </div>
+            <p class="inner-companions__text">левел:</p>
+            <p class="inner-companions__level">50</p>
+            <button class="inner-companions__invite-button" type="button">Позвать!</button>
+          </li>
+        </ul>
+        <a class="inner-companions__show-more" href="catalog.html">Показать еще</a>
+        <button class="inner-companions__prev" type="button">На предыдущую страницу попутчиков</button>
+        <button class="inner-companions__next" type="button">На следующую страницу попутчиков</button>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+        <a class="page-footer__logo logo" href="index.html">
+          <img class="logo__img logo__img--footer" src="http://placehold.it/100x19" width="100" height="19" alt="логотип сервиса Погнали">
+        </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text light-text">Разработано</p>
+        <div class="copyright__logo htmlacademy-logo">
+          <a class="htmlacademy-logo__link" href="https://htmlacademy.ru/">
+            <img class="htmlacademy-logo__icon" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
