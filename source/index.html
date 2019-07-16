@@ -6,39 +6,31 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__logo-wrapper logo">
-        <a class="logo__link">
+  <header class="page-header">
+        <a class=" page-header__logo logo  logo__link">
           <img class="page-header__logo-image logo__img" src="http://placehold.it/100x19" width="100" height="19" alt="логотип сервиса Погнали">
         </a>
-      </div>
       <nav class="main-nav menu">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <div class="main-nav__logo-wrapper logo">
-            <a class="main-nav__logo-link logo__link">
-              <img class="main-nav__logo-image logo__img" src="http://placehold.it/100x19" width="100" height="19" alt="логотип сервиса Погнали">
-            </a>
-          </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="link__info" href="#">О сервисе</a>
+              <a class="site-list__link" href="#">О сервисе</a>
             </li>
             <li class="site-list__item">
-              <a class="link__form" href="form.html">Направления</a>
+              <a class="site-list__link" href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
-              <a class="link__catalog" href="catalog.html">Попутчики</a>
+              <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <a class="link__login auth-button" href="#">Авторизоваться</a>
+          <a class="menu__link-login auth-button" href="#">Авторизоваться</a>
         </div>
         <div class="contacts">
-          <a class="contacts__phone" href="tel:+78005558628">
-            <span class="contacts__phone--mobile">8 800 555-86-28</span>
+          <a class="contacts__item contacts__item--phone" href="tel:+78005558628">
+            <span class="contacts__content">8 800 555-86-28</span>
           </a>
-          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-            <span class="contacts__email--email">mail@htmlacademy.ru</span>
+          <a class="contacts__item contacts__item--email" href="mailto:mail@htmlacademy.ru">
+            <span class="contacts__content">mail@htmlacademy.ru</span>
           </a>
         </div>
         <div class="page-header__social social">
@@ -136,18 +128,18 @@
       </section>
 
       <section class="companions">
-        <h2 class="companion__title h2-main">Попутчики</h2>
-        <p class="companion__text text-light">
+        <h2 class="companions__title h2-main">Попутчики</h2>
+        <p class="companions__text text-light">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <p class="companion__text text-bold">
+        <p class="companions__text text-bold">
           Теперь можно легко найти единомышленников!
         </p>
         <ul class="companions__list">
-          <li class="companion__item companion__item">
-            <img class="companion__img" src="http://placehold.it/270x428" width="270" height="428" alt="Фото попутчика">
-            <h3 class="companion__item-title">Таня Фирсова</h3>
-            <p class="companion__item-tags">
+          <li class="companions__item companions__item">
+            <img class="companions__img" src="http://placehold.it/270x428" width="270" height="428" alt="Фото попутчика">
+            <h3 class="companions__item-title">Таня Фирсова</h3>
+            <p class="companions__item-tags">
               #ЗОЖ #ПП #Фитнес #пляж
               #авокадо #смузи
             </p>
@@ -158,10 +150,10 @@
               <span class="transport__icon transport__icon--walk">Пешком</span>
             </div>
           </li>
-          <li class="companion__item companion__item">
-            <img class="companion__img" src="http://placehold.it/270x428" width="270" height="428" alt="Фото попутчика">
-            <h3 class="companion__item-title">Петя Демин</h3>
-            <p class="companion__item-tags">
+          <li class="companions__item companions__item">
+            <img class="companions__img" src="http://placehold.it/270x428" width="270" height="428" alt="Фото попутчика">
+            <h3 class="companions__item-title">Петя Демин</h3>
+            <p class="companions__item-tags">
               #бургер #бар #футбол
               #концерт #крафт
             </p>
@@ -173,7 +165,7 @@
             </div>
           </li>
         </ul>
-        <a class="companion__show-all button" href="#">Показать всех</a>
+        <a class="companions__show-all button" href="#">Показать всех</a>
       </section>
 
       <section class="tariffs">
@@ -195,7 +187,7 @@
         <a class="bus-tariffs-show" href="#">Показать тарифы для бизнеса</a>
       </section>
 
-<!--  попап для секции бизнес-тарифов
+  <!--  попап для секции бизнес-тарифов
       <section class="bus-tariffs popup__tariffs">
         <div class="bus-tariffs__wrapper">
           <h2 class="bus-tariffs__title h2-main">Бизнес-тарифы</h2>
@@ -228,11 +220,13 @@
           <a class="contacts__button button-auth" href="#">Переход к авторизации</a>
         </form>
         <p class="contacts__text text-light">Остались вопросы? Мы с радостью на них ответим!</p>
-        <div class="contacts__links">
-          <a class="contacts__phone" href="tel:+78005558628">
-            <span class="contacts__phone--mobile">8 800 555-86-28</span>
-          </a>
-          <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="contacts__links contacts">
+          <a class="contacts__item contacts__item--phone" href="tel:+78005558628">
+              <span class="contacts__content">8 800 555-86-28</span>
+            </a>
+            <a class="contacts__item contacts__item--email" href="mailto:mail@htmlacademy.ru">
+              <span class="contacts__content">mail@htmlacademy.ru</span>
+            </a>
         </div>
       </section>
 
@@ -247,13 +241,11 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-fooger__logo-wrapper logo">
-        <a class="logo__link">
-          <img class="page-footer__logo-image logo__img" src="http://placehold.it/100x19" width="100" height="19" alt="логотип сервиса Погнали">
+        <a class="page-footer__logo logo">
+          <img class="logo__img logo__img--footer" src="http://placehold.it/100x19" width="100" height="19" alt="логотип сервиса Погнали">
         </a>
-      </div>
       <div class="page-footer__social social">
-        <ul class="social__list">
+        <ul class="social__list">s
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
