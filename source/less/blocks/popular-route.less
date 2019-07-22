@@ -1,0 +1,99 @@
+.popular-route {
+  display: flex;
+  flex-direction: column;
+  background-color: @gray;
+  border-radius: 0 0 20px 20px;
+}
+
+.popular-route__title {
+  padding-left: 25px;
+
+  .h2-title;
+}
+
+.popular-route__text {
+  padding-left: 25px;
+  padding-right: 35px;
+  margin-bottom: 65px;
+
+  color: @dark-gray;
+  .text-light;
+}
+
+.popular-route__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular-route__wrapper {
+  padding: 25px 25px 25px 25px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.popular-route__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 270px;
+  height: 190px;
+  padding-bottom: 10px;
+
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.popular-route__item--thailand {
+  background-image: url("../img/thailand-mobile@1x.jpg");
+}
+
+.popular-route__item--france {
+  background-image: url("../img/france-mobile@1x.jpg");
+}
+
+.popular-route__item--czech {
+  background-image: url("../img/czech-mobile@1x.jpg");
+}
+
+.popular-route__item-title {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  color: @dark-blue--button;
+  .h3-title;
+}
+
+.popular-route__item-subscribers {
+  margin: 0;
+  padding: 0;
+
+  color: @opacity-gray;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.popular-route__item-description {
+  margin: 0;
+  padding: 0;
+
+  color: @opacity-gray;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.popular-route__show-all {
+  width: 270px;
+  margin: 25px 0 30px 0;
+  box-sizing: border-box;
+}

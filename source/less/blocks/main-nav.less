@@ -3,9 +3,12 @@
 }
 
 .main-nav__toggle {
+  padding: 0;
+  margin: 0;
   width: 25px;
-  height: 10px;
+  height: 11px;
   font-size: 0;
+  line-height: 0;
 
   background-color: @dark-blue;
   background-image: url("../img/menu-white.svg");
@@ -16,11 +19,12 @@
 
 .main-nav__wrapper {
   position: absolute;
-  top: 54px;
-  left: -270px;
+  top: 53px;
+  left: -220px;
 
-  display: block;
+  display: none;
   width: 320px;
 
   background-color: white;
+  z-index: 2;
 }
