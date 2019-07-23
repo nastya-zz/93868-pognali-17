@@ -1,0 +1,54 @@
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links__call-us,
+.links__write-us {
+  font-size: 0;
+}
+
+.icon {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.icon--call-us {
+  background-color: #ff8d30;
+}
+
+.icon--call-us::after {
+  position: absolute;
+
+  content: "";
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-9px, -9px);
+
+  background-image: url("../img/topmenu-phone.svg");
+}
+
+.icon--write-us {
+  background-color: #ffbd30;
+}
+
+.icon--write-us::after {
+  position: absolute;
+
+  content: "";
+  width: 18px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-9px, -7px);
+
+  background-image: url("../img/topmenu-mail.svg");
+  background-repeat: no-repeat;
+}

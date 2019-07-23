@@ -1,0 +1,72 @@
+.contacts-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 320px;
+  margin: 0 auto;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  background-color: @dark-blue--text;
+  border-radius: 0 0 20px 20px;
+  box-sizing: border-box;
+}
+
+.contacts-us__title {
+  color: white;
+  .h2-title;
+  text-align: center;
+}
+
+.contacts-us__text {
+  margin-bottom: 30px;
+  color: white;
+  .text-light;
+  text-align: center;
+}
+
+.contacts-us__auth {
+  color: @yellow;
+}
+
+.contacts-us__login {
+  position: relative;
+}
+
+.contacts-us__email {
+  width: 270px;
+  padding: 22px 20px;
+  margin-bottom: 30px;
+
+  color: @opacity-gray;
+  .text-list-button;
+
+  border-radius: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.contacts-us__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 64px;
+
+  font-size: 0;
+  background-color: @yellow;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 14px;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.contacts-us__links .contacts__item {
+  color: @yellow;
+}
+
+.contacts-us__links {
+  margin-bottom: 10px;
+}
