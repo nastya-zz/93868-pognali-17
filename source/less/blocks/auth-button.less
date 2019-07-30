@@ -2,10 +2,12 @@
   display: block;
 
   min-width: 189px;
-  padding: 18px;
-  padding-bottom: 16px;
+  padding: 12px;
+  padding-bottom: 8px;
 
   color: @dark-blue--button;
+  font-size: 17px;
+  line-height: 30px;
   font-weight: bold;
 
   text-align: center;
@@ -15,4 +17,8 @@
   background-color: #ffd74b;
   border-radius: 25px;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  font-size: 20px;
 }

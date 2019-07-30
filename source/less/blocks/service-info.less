@@ -39,3 +39,99 @@
   color: white;
   .text-bold;
 }
+
+.service-info__button.button {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .service-info {
+    width: 768px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    background-color: @dark-blue--text;
+    background-image: url("../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 0 0 55px 55px;
+  }
+
+  .service-info__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 135px;
+    padding-left: 35px;
+    .h2-title--tablet;
+    .margin-text--tablet;
+  }
+
+  .service-info__text {
+    width: 300px;
+    padding-left: 35px;
+
+    .text-light--tablet;
+    .margin-text--tablet;
+  }
+
+  .service-info__text--bold {
+    width: 300px;
+    padding-left: 35px;
+
+    .text-bold--tablet;
+    margin-bottom: 50px;
+  }
+
+  .service-info__button.button {
+    display: block;
+
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .service-info {
+    width: 1440px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 130px;
+    padding-bottom: 0;
+
+    background-color: @dark-blue--text;
+    background-image: url("../img/about-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border-radius: 0 0 55px 55px;
+  }
+
+  .service-info__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 135px;
+    .h2-title--tablet;
+    margin-bottom: 60px;
+  }
+
+  .service-info__text {
+    width: 640px;
+    padding: 0;
+    margin-bottom: 40px;
+
+    .text-light--tablet;
+  }
+
+  .service-info__text--bold {
+    width: 410px;
+    padding: 0;
+
+    .text-bold--tablet;
+    margin-bottom: 90px;
+  }
+
+  .service-info__button.button {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 165px;
+  }
+}

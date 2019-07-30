@@ -3,17 +3,34 @@
   margin-bottom: 20px;
 }
 
+.margin-text--tablet {
+  margin-bottom: 40px;
+}
 //миксины текста в параграфах
 .text-light {
   font-size: 16px;
   line-height: 22px;
-  font-weight: lighter;
+  font-weight: 300;
+  text-align: left;
+}
+
+.text-light--tablet {
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 300;
   text-align: left;
 }
 
 .text-bold {
   font-size: 16px;
   line-height: 22px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.text-bold--tablet {
+  font-size: 21px;
+  line-height: 25px;
   font-weight: bold;
   text-align: left;
 }
@@ -25,6 +42,13 @@
   line-height: 18px;
   text-align: left;
 }
+
+.text-list-button--tablet {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+}
 //стиль заголовка
 .h2-title {
   padding-top: 70px;
@@ -32,6 +56,14 @@
   color: @orange;
   font-size: 24px;
   line-height: 24px;
+
+  text-align: left;
+}
+
+.h2-title--tablet {
+  color: @orange;
+  font-size: 45px;
+  line-height: 45px;
 
   text-align: left;
 }
@@ -48,4 +80,11 @@
   font-weight: bold;
 
   text-decoration: none;
+}
+//list-style
+.list-style {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }

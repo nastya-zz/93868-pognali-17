@@ -1,5 +1,16 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    margin-bottom: 110px;
+  }
+}
+
 .contacts__item {
-  display: block;
   padding-left: 60px;
   margin-bottom: 30px;
   color: @dark-blue--text;
@@ -9,4 +20,14 @@
 
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__item {
+    padding-left: 185px;
+    margin-bottom: 40px;
+
+    font-size: 28px;
+    line-height: 28px;
+  }
 }

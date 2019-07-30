@@ -13,6 +13,7 @@
 }
 
 .popular-route__title {
+  margin: 0;
   padding-left: 25px;
 
   .h2-title;
@@ -21,6 +22,7 @@
 .popular-route__text {
   padding-left: 25px;
   padding-right: 35px;
+  margin: 0;
   margin-bottom: 65px;
 
   color: @dark-gray;
@@ -30,10 +32,7 @@
 .popular-route__list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  .list-style;
 }
 
 .popular-route__wrapper {
@@ -103,4 +102,70 @@
   width: 270px;
   margin: 25px 0 30px 0;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .popular-route {
+    width: 768px;
+    padding-right: 75px;
+    padding-left: 75px;
+
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 40px top 80px;
+    border-radius: 0 0 55px 55px;
+  }
+
+  .popular-route__title {
+    padding-top: 75px;
+    padding-left: 0;
+    margin-bottom: 60px;
+
+    .h2-title--tablet;
+  }
+
+  .popular-route__text {
+    width: 350px;
+    padding: 0;
+    margin-bottom: 110px;
+
+    .text-light--tablet;
+  }
+
+  .popular-route__list {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+  }
+
+  .popular-route__item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    width: 620px;
+    height: 140px;
+  }
+
+  .popular-route__item--thailand {
+    background-image: url("../img/thailand-desktop@1x.jpg");
+    background-position: right top;
+  }
+
+  .popular-route__item--france {
+    background-image: url("../img/france-desktop@1x.jpg");
+    background-position: right top;
+  }
+
+  .popular-route__item--czech {
+    background-image: url("../img/czech-desktop@1x.jpg");
+    background-position: right top;
+  }
+
+  .popular-route__wrapper {
+    width: 375px;
+    padding: 25px 30px 25px 30px;
+    background-color: white;
+    border-radius: 15px 0 0 15px;
+  }
 }
