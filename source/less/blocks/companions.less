@@ -1,4 +1,5 @@
 .companions {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -38,15 +39,16 @@
   margin-bottom: 60px;
 }
 
+.companions__text--br {
+  display: none;
+}
+
 .companions__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  .list-style;
 }
 
 .companions__item {
@@ -85,4 +87,115 @@
 
 .companions__show-all {
   margin: 5px 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .companions {
+    width: 768px;
+    padding-right: 75px;
+    padding-left: 75px;
+
+    border-radius: 0 0 55px 55px;
+  }
+
+  .companions__title {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 35px;
+
+    .h2-title--tablet;
+    margin-bottom: 55px;
+  }
+
+  .companions__text {
+    padding-right: 190px;
+    padding-left: 0;
+
+    color: white;
+    .text-light--tablet;
+    .margin-text--tablet;
+  }
+
+  .companions__text--bold {
+    .text-bold--tablet;
+  }
+
+  .companions__text--br {
+    display: inline-block;
+  }
+
+  .companions__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .companions__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 285px;
+    margin-bottom: 80px;
+
+    border-radius: 30px;
+  }
+
+  .companions__img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .companions__item-title {
+    margin: 30px 65px 25px;
+    .h3-title--tablet;
+  }
+
+  .companions__item-tags {
+    padding: 0 30px 25px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .companions__show-all {
+    width: 618px;
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .companions {
+    width: 1440px;
+    padding-left: 130px;
+    padding-right: 750px;
+
+    border-radius: 0 0 55px 55px;
+  }
+
+  .companions__title {
+    padding-top: 130px;
+  }
+
+  .companions__text {
+    padding-right: 130px;
+  }
+
+  .companions__text--bold {
+    margin-bottom: 90px;
+  }
+
+  .companions__list {
+    position: absolute;
+    top: 130px;
+    right: 60px;
+
+    width: 630px;
+  }
+
+  .companions__show-all {
+    width: 280px;
+    margin-bottom: 135px;
+  }
 }
