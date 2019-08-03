@@ -9,7 +9,7 @@
   <body>
 
     <header class="page-header">
-      <a class=" page-header__logo logo  logo__link  container" href="index.html">
+      <a class=" page-header__logo logo  logo__link  container">
         <img class="page-header__logo-image logo__img" src="img/logo-mobile-white@1x.png" width="96" height="15" alt="логотип сервиса Погнали">
       </a>
       <nav class="main-nav menu  container">
@@ -26,8 +26,13 @@
               <a class="site-list__link" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <a class="menu__link-login auth-button" href="#">Авторизоваться</a>
-          <div class="contacts">
+          <div class="main-nav__link links container">
+            <a class="main-nav__call-us icon icon--call-us" href="#" aria-label="Свяжитесь с нами"></a>
+            <a class="main-nav__write-us icon icon--write-us"  href="#" aria-label="Напишите нам"></a>
+            <a class="main-nav__link-login auth-button" href="#">Авторизоваться</a>
+          </div>
+          <!-- <a class="main-nav__link-login auth-button" href="#">Авторизоваться</a> -->
+          <div class="main-nav__contacts contacts">
             <a class="contacts__item contacts__item--phone" href="tel:+78005558628">
               <span class="contacts__content">8 800 555-86-28</span>
             </a>
@@ -38,9 +43,9 @@
           <div class="page-header__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
                   <span class="social__icon social__icon--facebook">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                    <svg width="10px"  height="20px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                       <g>
                         <path
                           d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
@@ -52,9 +57,9 @@
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
+                <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
                   <span class="social__icon social__icon--vkontakte">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                    <svg width="24px"  height="12px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                       <g>
                         <path
                           d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
@@ -79,9 +84,9 @@
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
                   <span class="social__icon social__icon--instagram">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                    <svg width="18px"  height="18px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                       <style type="text/css">
                         .st0 {
                           fill: #231F20;
@@ -108,15 +113,15 @@
     </main>
 
     <footer class="page-footer">
-        <a class="page-footer__logo logo  container" href="index.html">
-          <img class="logo__img logo__img--footer" src="img/logo-mobile-blue@1x.png">
+        <a class="page-footer__logo logo  container">
+          <img class="logo__img logo__img--footer" src="img/logo-mobile-blue@1x.png" alt="Логотип сервиса погнали">
         </a>
       <div class="page-footer__social social  container">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
               <span class="social__icon social__icon--facebook">
-                <svg width="10px"  height="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
+                <svg width="10px"  height="20px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 21" style="enable-background:new 0 0 11 21;" xml:space="preserve">
                   <g>
                     <path
                       d="M7.8,21H2.2v-9.8H0V6.4h2.1C2,4.2,2.4,2.6,3.4,1.5C4.2,0.6,5.5,0.1,7.1,0L11,0v4.7H7.9C7.8,4.9,7.7,5.5,7.7,6.4H11v4.8H7.8
@@ -130,7 +135,7 @@
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы в Вконтакте">
               <span class="social__icon social__icon--vkontakte">
-                <svg width="24px"  height="12px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
+                <svg width="24px"  height="12px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
                   <g>
                     <path
                       d="M23.9,15.8c-0.4,0-1.2-0.1-2.1-0.6c-0.6-0.4-1.2-1-1.8-1.5c-0.4-0.4-1.2-1.2-1.4-1.2c-0.3,0.1-0.5,0.9-0.5,1.6
@@ -157,7 +162,7 @@
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме">
               <span class="social__icon social__icon--instagram">
-                <svg width="18px"  height="18px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
+                <svg width="18px"  height="18px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
                   <style type="text/css">
                     .st0 {
                       fill: #231F20;
@@ -178,7 +183,7 @@
         <p class="copyright__text light-text">Разработано</p>
         <div class="copyright__logo htmlacademy-logo">
           <a class="htmlacademy-logo__link" href="https://htmlacademy.ru/" aria-label="Логотип HTML Academy">
-            <svg width="27" height="34" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
+            <svg width="27" height="34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 34" style="enable-background:new 0 0 27 34;" xml:space="preserve">
               <style type="text/css">
                 .st0 {
                   fill: #231F20;
