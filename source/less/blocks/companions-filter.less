@@ -1,10 +1,46 @@
 .companions-filter {
+  width: 270px;
   padding: 25px;
+  margin-top: 25px;
 
   background-color: @yellow;
-  border-radius: 0 0 20px 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .companions-filter__title {
   padding-right: 100px;
+  color: @dark-slate-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .companions-filter {
+    width: 688px;
+    padding: 35px;
+    margin-top: 45px;
+  }
+
+  .companions-filter__title {
+    padding-right: 0;
+
+    color: @dark-slate-blue;
+    .h2-title--tablet-inner;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .companions-filter {
+    width: 285px;
+    margin: 0;
+    padding: 45px;
+    padding-bottom: 35px;
+
+    background-color: @yellow;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .companions-filter__title {
+    color: @dark-slate-blue;
+  }
 }
